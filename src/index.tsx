@@ -3,13 +3,26 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import ErrorPage from './components/ErrorPage';
+import { Reader } from './pages/reader/Reader';
+
+const router = createBrowserRouter([{
+  path: '/',
+  element: <App/>,
+  errorElement: <ErrorPage/>
+},
+{
+  path: '/reader',
+  element: <Reader/>
+}])
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

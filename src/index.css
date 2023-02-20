@@ -1,13 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(12, 12, 12, 0.924);
+  font-family: 'Kanit', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.custom-img {
+  background-image: url(../src/images/trees.jpg);
+}
+
+.footer-image {
+  background-image: url(../src/images/footer.png);
+}
+
+.custom-bg { 
+  background-image: url(../src/images/timeline-graphic.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
